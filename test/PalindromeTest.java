@@ -3,6 +3,7 @@ import static org.junit.Assert.*;
 import java.util.Scanner;
 
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 
@@ -62,6 +63,20 @@ public class PalindromeTest {
     	public void phraseCaseinsensitiveSpcl()  {
         assertFalse(Palindrome.isPal("My!")); //Not a Palindrome    																			
     }
+    	//Ignore
+    	@Ignore
+    	public void phrasePalDupl()  {
+        assertTrue(Palindrome.isPal("hel l o ol leh")); //Not a Palindrome    																			
+    }   //assertion not null
+    	@Test
+    	public void testNotNullString() {
+    		assertNotNull("Abc", false);
+    	}
+    	// assertion null
+    	@Test
+    	public void testNullString() {
+    		assertNull("", null);
+    	}
     	//User can test any string
     	@Test
     	public void testInp() {
